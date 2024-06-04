@@ -11,7 +11,7 @@ btnSignUp.addEventListener("click", (e) => {
         alert("Vui lòng không để trống");
     } else {
         const user = JSON.parse(localStorage.getItem(inputUsername.value));
-        if (user.username === inputUsername.value && user.username === inputPassword.value) {
+        if (user.username === inputUsername.value && user.password === inputPassword.value) {
             alert("Đăng nhập thành công");
             window.location.href="./index.html";
         } else {
