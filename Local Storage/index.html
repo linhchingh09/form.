@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="renderUser()">
+    <div class="form">
+        <div class="grp">
+            <input type="text" class="input" id="name">
+            <div class="error-message"></div>
+        </div>
+        <div class="grp">
+        <input type="password" class="input" id="password">
+        <div class="error-message"></div>
+        </div>
+        <div class="grp">
+            <input type="hidden" id="index">
+        </div>
+        <button  onclick="addNew()" id="save"> Đăng ký</button>
+        <button style="display: none" id="update" onclick="changeStudent()">Update</button>
+    </div>
+        
+        <table border="1" cellspacing="0" cellpadding="10" id="tableContent">
+            
+        </table>
+        <script src="script.js"></script>
+</body>
+</html>
